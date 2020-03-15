@@ -1,0 +1,27 @@
+.button {
+    background: transparent;
+    color: #555;
+    cursor: pointer; //ima pointer, selector i default. Default je strelica, selector crta uspravna a pointer je ruka
+    font-weight: 600;
+    margin-left: 1.3rem;
+    outline: none; //outline je kad recimo tabom prelaziš sa elemente na element pa se pojavi okvir neki
+    padding: 1.3rem;
+    line-height: 1; //ovo će osigurat da tekst unutar botuna bude baš u sredini
+    border: 1px solid #555;
+    transition: background .2s ease, transform .2s ease; //ease je elegantnije od lienar jer polako prebacuje, šta? pozadinu ovu dole koju smo zadali i transform isto dole, čeka se koliko? 0.2sekunde
+    &:hover, &:focus { //focus je kad se prebacuješ tabovima da se minja boja
+        background: #e8e8e8;
+    }
+    &:active {
+        background: #ccc; //ovo će dodatno potamnit botun kad se klikne
+        transform: scale(1.1); //ovo će transformirati veličinu botuna kad se klikne, bit će malo veći
+    }
+    //&:hover, &:focus, &:active - ovo su pseudo selektori, proširuje postojeću klasu
+}
+
+.button--round {
+    border-radius: 50%; //napravit će savršenu kružnicu
+    height: 4rem;
+    width: 4rem;
+
+}

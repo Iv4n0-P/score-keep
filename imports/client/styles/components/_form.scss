@@ -1,0 +1,35 @@
+.form {
+  display: flex; //koristimo flex box, odmah su elementi u formi, input i botun, dobili istu visinu i izgledaju izjednačeno
+//ovaj form still smo dodali <form> tagu u aplikaciji. Taj form ima svoj children a to su input i botun. Form je postao tako flex container a sve unutar toga containera, input i botun, su flex children
+
+}
+
+.form__input {
+    flex-grow: 1; //ovo ćemo dodat na input unutar formulara, i to će praktički reć tom inputu da se može raširit skroz do kraja, zauzet cijeli prostor u containeru, botun će ostat u istom redu ali će input se proširit i zauzet sav preostali slobodan prostor
+    border: 1px solid #e8e8e8;
+    padding: 0 1.3rem; //na paddingu možeš stavit sve paddinge, umisto da koristiš padding-right, padding-left, padding-top, padding bottom, stavljaju se u smjeru kazaljke na satu počevši od top, znači ide top righ bottom left,
+
+/*padding sa 4 propertija
+padding: 25px 50px 75px 100px;
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px 
+
+If the padding property has three values:
+padding: 25px 50px 75px;
+top padding is 25px
+right and left paddings are 50px
+bottom padding is 75px
+
+If the padding property has two values:
+padding: 25px 50px;
+top and bottom paddings are 25px
+right and left paddings are 50px
+
+If the padding property has one value:
+padding: 25px;
+all four paddings are 25px */
+
+
+}

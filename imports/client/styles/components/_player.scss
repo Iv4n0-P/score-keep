@@ -1,0 +1,20 @@
+.player {
+  display: flex; //ovo će ujednačit elemente unutar flex containera - a prije toga smo ono što želimo da ide na jednu stranu stavili u jedan div, a šta želimo da ide na drugu stranu stavili u drugi div, tako da flexbox njih odma izjednači u jednom redu
+  justify-content: space-between; //i ovo će ta dva diva razdvojit, jednog će gurnit u jedan kraju drugog u drugi kraj
+align-items: center; //ovo će centrirat po vertikali sve elemente flex-a
+}
+
+.player__name {
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.player__stats {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.player__actions {
+    flex-shrink: 0; //recimo ako se upiše nekog dugu dugo ime, ovi botuni koji su u actions klasi će past jedan ispod drugoga, a sa ovim će se uvijek zadržat isti box
+}
